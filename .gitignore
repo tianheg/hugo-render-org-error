@@ -1,0 +1,10 @@
+public
+resources
+.hugo_build.lock
+*.org#
+*~
+node_modules/
+static/_pagefind
+
+# Local Netlify folder
+.netlify

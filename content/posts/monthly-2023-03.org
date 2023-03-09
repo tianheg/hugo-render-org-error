@@ -1,0 +1,79 @@
+#+TITLE: 月读（2023年3月）
+#+DATE: <2023-03-05 Sun 08:02>
+#+TAGS[]: 他山之石
+
+{{< monthly "How to Learn React in 2023" "https://www.freecodecamp.org/news/how-to-learn-react-in-2023/">}}
+学习 React 需要掌握的 JS 概念：
+
+- Variables
+- Arrays (and the .map() function)
+- Objects
+- JavaScript events
+- Functions and arrow functions
+- Scopes and closures
+- Promises and async-await syntax.
+- Basic error handling
+
+https://beta.reactjs.org/
+
+You Don't Need to Learn Class Components: Class components are still a part of React and they are still used in production code in a number of instances (such as error boundaries). But just be aware that you do not need to learn them in order to be skilled at React.
+
+Learn React Query `@tanstack/react-query`: The greatest benefit of using React Query comes from that fact that is gives you a cache (a store) that lets you hold on to the result of each query, so you can "save" the data that you've fetched. Plus it has many tools to update that cache exactly the way you want.
+
+You Don't Need to Learn Redux
+{{< /monthly >}}
+{{< monthly "使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题" "https://github.com/noobnooc/noobnooc/discussions/9">}}
+<!-- note -->
+{{< /monthly >}}
+{{< monthly "将 ChatGPT 变成你的生产率" "https://pepcn.com/gtd/jiang-chatgpt-bian-cheng-ni-de-sheng-chan-lu">}}
+<!-- note -->
+{{< /monthly >}}
+{{< monthly "谈谈我对 ChatGPT 应用的 prompt 的看法" "https://reorx.com/makers-daily/004-prompts-and-parameters-transparancy/">}}
+<!-- note -->
+{{< /monthly >}}
+{{< monthly "OpenAI 选择了使用 Server-sent events 来实现 ChatGPT 是逐句给出答案" "https://twitter.com/mr_easonyang/status/1632407953889447937">}}
+<!-- note -->
+{{< /monthly >}}
+{{< monthly "Modular Web Design: The New Playbook for B2B Websites" "https://www.webstacks.com/modular-web-design">}}
+模块化网页设计
+
+Modular design is an approach for designing complete products by combining smaller, independent parts. As shown in the example above, the smaller pieces are independent of each other, but when assembled, they can form different finished products.
+{{< /monthly >}}
+{{< monthly "关于笔记的一些思考" "https://www.usmacd.com/2022/09/16/note/">}}
+我们应该寻找与我们观点相反的论点或者事实来挑战我们的既有思维，但是受「确认偏差」的影响，我们会不经意地忽略这些信息，那些和我们观点一致的信息有很大吸引力，因为这些信息可以证明自己很博学。解决「确认偏差」的方法：把寻找证实性信息变为收集所有信息，不需要关注这些信息支持的具体观点。
+{{< /monthly >}}
+{{< monthly "学习神经网络的一点笔记" "https://blog.codingnow.com/2023/03/feedforward_nn.html">}}
+读了这篇文章，开始对机器学习感兴趣了。但奈何时间不够用，还要找工作，只能暂时搁置了。
+{{< /monthly >}}
+{{< monthly "在碎片化的时代里生存——碎片时间使用说明书。 - Xiaowen.Z Deployed" "https://xiaowenz.com/blog/2023/02/decouple-your-time/" >}}
+如果无法拥有整块时间，那就把要做的事情分成碎片。
+
+现代的时间管理理论的三个组成部分——解构、碎片执行和追踪。其中，解构的质量直接影响了最终的达成效果。
+
+解构——把复杂任务转化为能被碎片化时间吸收掉的能力。
+
+如果工作总是难以在有限或者预期的时间完成，那么我需要的就是“闭环”。
+
+“开环”指的是没有明确定义什么是“完成”的任务。如果手上的工作没有一个明确的停止点，我就无法准确而务实地估计完成它需要的时间，最终合理地放置到本就碎片化的行程中。拖延、过度疲劳、工作马虎都是开环带来的后果。
+
+几个例子：
+
+1. 为考试而学习。
+2. 为项目做研究。
+3. 修改粗糙的草图。
+4. 开一个组团会议。
+
+“闭环”的定义：内容明确，完成的时间可控，完成的条件是确定的、可度量的。在很多 GTD 理论中，又称之为 Actionable。
+
+因此，如果我要把一项工作放到自己的计划中，最重要的规则就是：确保这个工作的定义是闭环的。如果没有，就分解它，直到能够用闭环任务来描述为止。
+{{< /monthly >}}
+{{< monthly "如何抑止女性工作？| 随机波动107" "https://mp.weixin.qq.com/s/GDylYYmFVed6g2I9_RZ0oQ" >}}
+消除性别歧视，是一件漫长的事情。
+{{< /monthly >}}
+{{< monthly "中国人是“空心人” / Twitter" "https://twitter.com/i/web/status/1633273925693067271" >}}
+一个人如何建立自我定位。
+
+中国不鼓励个人发展出真我
+
+> 在欧美国家，社交文化在这方面的要求是不同的。在这里，人们要求你展露真我，并想要与你的真我而不是演技交往。人们会询问你有什么兴趣爱好，如何打发闲暇时光，怎样描述自己的性格。在这里，一个人的自我定位是依据其真我建立的，不像在中国，个体只是关系网中的一个交叉点。
+{{< /monthly >}}

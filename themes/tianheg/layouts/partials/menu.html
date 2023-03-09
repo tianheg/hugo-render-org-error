@@ -1,0 +1,35 @@
+<nav class="nav">
+    <ul class="menu" id="menu">
+        {{ .Scratch.Set "currentPage" . }}
+        {{ $currentPage := .Scratch.Get "currentPage" }}
+        {{ $ctx := . }}
+        {{ range .Site.Menus.main }}
+            {{ if and (eq .Identifier "theme-switcher") $.Site.Params.enableDarkMode }}
+
+                {{ $switcher := partial "components/dark-mode.html" $ctx }}
+                {{ with $switcher }}
+                    <li class="menu-item">
+                        {{ . }}
+                    </li>
+                {{ end }}
+            {{ else if and (eq .Identifier "menu-time") }}
+               {{ $switcher := partial "components/menu-time.html" $ctx }}
+               {{ with $switcher }}
+                  <li class="menu-item">
+                     {{ . }}
+                  </li>
+               {{ end }}
+            {{ else }}
+                <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
+                    {{- $linkType := (string .Pre) -}}
+                    <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external"{{ end }}>
+                        {{- with .Name -}}
+                            <span class="menu-item-name">{{ . }}</span>
+                        {{- end -}}
+                    </a>
+                </li>
+            {{ end }}
+
+        {{ end }}
+    </ul>
+</nav>

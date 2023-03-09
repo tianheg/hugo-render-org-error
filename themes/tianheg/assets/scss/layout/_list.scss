@@ -1,0 +1,22 @@
+.list .main-inner {
+  width: $listWidth;
+
+  ul li {
+    margin-bottom: 5px;
+    list-style-type: square;
+    line-height: 2;
+  }
+}
+
+.list-item-title {
+  font-size: 1.2em;
+
+  &:visited {
+    color: grey;
+  }
+}
+
+.posts-per-year {
+  color: grey;
+  font-size: .6em;
+}

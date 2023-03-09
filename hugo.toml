@@ -1,0 +1,305 @@
+baseURL = ""
+enableGitInfo = true
+hasCJKLanguage = true
+languageCode = "zh-CN"
+pluralizeListTitles = false
+summaryLength = 42
+theme = "tianheg"
+timeout = 60000
+title = "一大加贝"
+
+[permalinks]
+tags = "/tags/:slug/"
+
+[taxonomies]
+tag = "tags"
+
+[frontmatter]
+lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
+
+[markup]
+defaultMarkdownHandler = "goldmark"
+[markup.goldmark]
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = false
+[markup.goldmark.parser]
+attribute = true
+autoHeadingID = true
+autoHeadingIDType = "github"
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true
+xHTML = false
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = false
+lineNumbersInTable = false
+noClasses = false
+noHl = false
+tabWidth = 2
+[markup.tableOfContents]
+endLevel = 6
+ordered = true
+startLevel = 2
+
+[minify.tdewolff.html]
+keepWhitespace = false
+
+[author]
+avatar = "/icons/apple-touch-icon.png"
+email = "me@tianhegao.com"
+motto = "了解自己，认识世界"
+name = "tianheg"
+twitter = "tianheg_"
+website = "https://tianhegao.com/"
+
+[related]
+includeNewer = true
+threshold = 80
+toLower = true
+[[related.indices]]
+name = "tags"
+weight = 100
+[[related.indices]]
+name = "date"
+pattern = "2006"
+weight = 90
+[[related.indices]]
+name        = "fragmentrefs"
+type        = "fragments"
+applyFilter = false
+weight      = 80
+
+
+[mediaTypes."application/atom+xml"]
+suffixes = ["xml"]
+
+[outputFormats.SectionsAtom]
+baseName = "atom"
+mediaType = "application/atom+xml"
+
+[outputFormats.SectionsRSS]
+baseName = "index"
+mediaType = "application/rss+xml"
+
+[outputs]
+home = ["HTML", "SectionsAtom", "SectionsRSS"]
+page = ["HTML"]
+section = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML"]
+
+[services.rss]
+limit = 10
+
+[menu]
+#[[menu.main]]
+#name = "主页"
+#url = "https://tianhegao.com/"
+#pre = "external"
+#weight = 1
+[[menu.main]]
+name = "关于"
+pageref = "/about"
+pre = "internal"
+weight = 2
+[[menu.main]]
+name = "现在"
+pageref = "/now"
+pre = "internal"
+weight = 3
+[[menu.main]]
+name = "阅读"
+pre = "internal"
+url = "/tags/reading/"
+weight = 4
+[[menu.main]]
+name = "重要"
+pageref = "/im"
+pre = "internal"
+weight = 5
+[[menu.main]]
+name = "技术"
+pre = "internal"
+url = "/tags/tech/"
+weight = 6
+#[[menu.main]]
+#name = "实验室"
+#pageref = "/lab"
+#pre = "internal"
+#weight = 7
+[[menu.main]]
+name = "归档"
+pageref = "/posts"
+pre = "internal"
+weight = 8
+[[menu.main]]
+identifier = "theme-switcher"
+weight = 9
+[[menu.main]]
+identifier = "menu-time"
+weight = 10
+
+[params]
+displayMenuInHome = true
+enableHeader = true
+enableMenu = true
+headerBackground = "alpha(var(--color-bg), 0.8) linear-gradient(90deg, #f79533b0 0, #f37055b4 15%, #ef4e7b1a 30%, #a166ab23 44%, #5073b821 58%, #1098ad26 72%, #07b39b41 86%, #6dba82a1 100%)"
+homePoetry = ["探索的人", "了解自己，认识世界", "谨以此博客献给未来的自己"]
+logo = "images/logo.png"
+siteBrandFontColor = "var(--color-contrast-high)"
+siteBrandFontSize = 1
+siteCreatedTime = "2018-12-23T20:17:43+08:00"
+siteDescription = "了解世界，认识自己"
+siteLogo = "/icons/apple-touch-icon.png"
+siteTwitter = "tianheg_"
+## Tags
+fontUnit = "em"
+largestFontSize = 2.5
+smallestFontSize = 1
+## List
+displayListTitle = false
+displayTaxonomyTermCount = true
+limitEntriesLimit = -1
+listDateFormat = "2006/01/02"
+listDatePosition = "left"
+listWidth = 50
+## theme
+defaultTheme = "light"
+enableDarkMode = true
+hideThemeToggle = false
+hideThemeToggleInHome = false
+primaryColorDark = "201, 65%, 62%"
+primaryColorLight = "220, 90%, 56%"
+## PWA
+enableServiceWorker = true
+msApplicationTileColor = "#fff"
+safariMaskColor = "#fff"
+themeColor = "#fff"
+themeColorDark = "#16171d"
+## meta data
+jsonLD = true
+openGraph = true
+twitterCards = true
+## animation
+duration = 0.5
+## Single post page
+postWidth = 50
+# post meta
+busuanziPagePVIcon = "eye"
+categoryDelimiter = "/"
+categoryIcon = "folder"
+displayBusuanziPagePV = false
+displayCategory = false
+displayExpiredDate = true
+displayModifiedDate = true
+displayPublishedDate = true
+displayReadingTime = false
+displayWordCount = false
+enablePostMeta = false
+enablePostMetaInHome = true
+expiredDateIcon = "calendar-times"
+modifiedDateIcon = "calendar-check"
+postMetaDateFormat = "2006.1.2"
+publishedDateIcon = "calendar-alt"
+readingTimeIcon = "clock"
+wordCountIcon = "pencil-alt"
+# external links
+hrefTargetBlank = true
+# TOC
+displayTOCNum = true
+displayTOCTitle = true
+enableTOC = false
+linkHeadingsToTOC = true
+# header
+anchorIcon = ""
+anchorSymbol = "#"
+enableAnchorAutoHide = true
+enableAnchorLink = true
+enableHeadingsAnchor = true
+headingsOpt = "1-6"
+# images
+autoDetectImages = true
+captionPrefix = "◎ "
+enableCaption = true
+# footnote
+footnoteReturnLinkIcon = "angle-up"
+insertHrBySelf = true
+squareBrackets = true
+# scrollbar
+customizeScrollbar = true
+## font
+# Site brand
+fontFamilySiteBrand = ""
+# Menu bar
+fontFamilyMenu = ""
+# Post title, post subtitle, list title, year and month title of the list, related posts title, previous/next post title, header of table, term/name in a definition list
+fontFamilyTitle = ""
+# Headings, toc title
+fontFamilyHeadings = ""
+# Code, superscript, post meta info, post updated badge, post gitinfo, minimal footer, busuanzi site view counter
+fontFamilyCode = "'Source Code Pro', 'Ubuntu Mono', 'DejaVu Sans Mono', 'Courier New', Monaco, monospace"
+# Blockquotes
+fontFamilyQuote = ""
+# Table of contents
+fontFamilyTOC = ""
+# Caption
+fontFamilyCaption = ""
+# Footer
+fontFamilyFooter = ""
+# Body
+fontFamilyBody = "-apple-system, system-ui, BlinkMacSystemFont, 'Noto Serif SC', Arial, 'Amstelvar', 'Josefin Sans', 'Hiragino Sans GB', 'Microsoft Yahei', 'ST Heiti', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+fontSize = 16
+## para
+backToTopIcon = "arrow-up"
+deleteHrBeforeDropCap = false
+displayBackToTopInHome = false
+displayBackToTopOnMobile = true
+displayEditLink = true
+displayFooter = true
+displayPostGitInfo = true
+displayRelatedPosts = true
+editIcon = "edit"
+editText = "编辑"
+enableBackToTop = true
+enableBackToTopAutoHide = true
+enableDropCap = false
+enableDropCapAfterHr = false
+enableFooter = true
+enableJustify = false
+enableMinimalFooter = true
+enableParagraphIndent = true
+enablePostGitInfo = true
+enablePostNav = true
+enableRelatedPosts = true
+enableSmallCaps = false
+indentFirstParagraph = false
+lineHeight = 2
+paragraphStyle = "margin"
+postNavInSection = true
+relatedPostsIcon = "plus-circle"
+relatedPostsNumber = 10
+repoEditURL = "https://github.com/tianheg/blog/edit/main"
+repoURL = "https://github.com/tianheg/blog"
+tabSize = 2
+# Code Blocks
+enableCopy = true 
+enableCopyAutoHide = true 
+enableFingerprint = true 
+enableHighlight = true 
+enableOverflowY = false 
+enableSRI = true 
+maxHeight = 20 # Unit: em
+# 404 page
+fofPoster = "./images/flying-clouds-720p.jpg"
+fofVideoMp4 = "/videos/flying-clouds-720p.mp4"
+fofVideoWebm = "/videos/flying-clouds-720p.webm"
+# Comments
+enableComments = true
